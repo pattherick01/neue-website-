@@ -6,11 +6,20 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
     background-image: url(Patrik\ Schnell\ Gitarrenunterricht.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #101111f8;
+}
+
+h1{
+    cursor: default;
+    text-shadow: 2px 2px 4px rgba(6, 8, 10, 0.858);
+    color: rgb(104, 149, 191);
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding-top: 1em;
 }
 
 .grid-container{
@@ -25,7 +34,7 @@ body {
 .container {
     width: 90%;
     height: 65%;
-    perspective: 800px;
+    perspective: 1200px;
     justify-self: center;
     align-self: center;
 }
@@ -38,6 +47,7 @@ body {
     position: relative;
     transition: transform 1200ms;
     transform-style: preserve-3d;
+    font-family: 'Cinzel', serif;
 }
 
 .container:hover > .card {
@@ -53,6 +63,7 @@ body {
     box-shadow: 0 0 5px  2px rgba(50, 50, 50, 0.75);
     position: absolute;
     backface-visibility: hidden;
+    font-family: 'Cinzel', serif;
 }
 
 .front {
@@ -66,4 +77,19 @@ body {
 .back {
     background-color: #131617f8;
     transform: rotateY(180deg);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 2em;
+    padding: 2em 0;
+}
+
+.footer-text{
+    font-size: 0.8rem;
+    color: rgba(104, 149, 191, 0.455);
 }
