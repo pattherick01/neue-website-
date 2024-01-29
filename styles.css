@@ -71,6 +71,15 @@ h2{
     font-family: 'Cinzel', serif;
 }
 
+.back a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.back a:hover{
+    color: rgba(250, 235, 215, 0.502);
+    transition: 0.3s;
+}
+
 .front {
     background-image: url(arsekicker.jpg);
     background-repeat: no-repeat;
@@ -79,10 +88,24 @@ h2{
     background-color: #131617f8;
 }
 
+#contact-pic{
+    background-image: url(Bildschirmfoto\ vom\ 2024-01-29\ 11-47-00.png);
+}
+
+
 .back {
     background-color: #131617f8;
     transform: rotateY(180deg);
     text-shadow:3px 3px 2px #747c7c85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 0 1em;
+}
+
+.back p{
+    font-size: 1.2em;
 }
 
 
