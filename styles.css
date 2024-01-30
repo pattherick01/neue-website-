@@ -92,6 +92,14 @@ h2{
     background-image: url(Bildschirmfoto\ vom\ 2024-01-29\ 11-47-00.png);
 }
 
+#unterricht-pic{
+    background-image: url(unterricht.png);
+}
+
+#preise-pic{
+    background-image: url(preise.png);
+}
+
 
 .back {
     background-color: #131617f8;
@@ -123,4 +131,69 @@ h2{
 .footer-text{
     font-size: 0.8rem;
     color: rgba(104, 149, 191, 0.455);
+}
+
+@media (max-width: 1550px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        height: 100vh;
+        overflow: hidden;
+        padding: 1em;
+    }
+    .back p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1132px) {
+    h1{
+        font-size: 2rem;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+        height: 150vh;
+        overflow: hidden;
+        padding: 1em;
+    }
+    .card{
+        height: 15em;
+    }
+}
+
+@media (max-width: 700px) {
+    .back p{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 1.3rem;
+        padding: 0 2em;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .back p{
+        font-size: 0.6em;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .grid-container{
+        height: 170vh;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 0.7rem;
+    }
 }
